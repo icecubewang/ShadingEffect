@@ -10,6 +10,20 @@ This repo contains my attempt of using OpenGL and javascript to create a scene w
 
 The three .png screenshots are the effect. Check them out!
 
+To run the code on your own repo:
+1. Clone the entire repo.
+2. Use terminal, enter the repo and run:
+	$python -m SimpleHTTPServer
+	OR
+	$python -m http.server
+	Depending on your python version.
+	The following message should appear:
+	Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+3. Open a web browser (Chrome prefered) and go to:
+	localhost:8000
+4. Click on a3.html
+5. Feel free to navigate around and add your own stuff!
+
 Explanation for mapping:
 	_________ (u, v)
 	|                |
