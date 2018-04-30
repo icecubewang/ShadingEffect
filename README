@@ -1,0 +1,24 @@
+
+
+Feilan Wang
+
+This repo contains my attempt of using OpenGL and javascript to create a scene with the following objects:
+- a sphere (left most, grey) with bling_phong shading 
+- a sphere (middle, grey) with phong illumination
+- a sphere (middle, colorful) with refraction
+- a sphere (right most, colorful) with texture mapping to resemble the effect of reflection
+
+The three .png screenshots are the effect. Check them out!
+
+Explanation for mapping:
+	_________ (u, v)
+	|                |
+	|                |
+	|	 ________|
+    (0, 0)
+R.y > abs(R.x) and R.y > abs(R.z) gives the top square of the sphere. 
+We are trying to map the texture to that square. 
+(0, 0) is mapped to when R.x/R.y = -1 and R.z/R.y = 1
+while 
+(1, 1) is mapped to when R.x/R.y = 1 and R.z/R.y = -1
+
